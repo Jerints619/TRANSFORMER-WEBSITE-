@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+    color: azure;
+
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+
+}
+
+
+@keyframes cena {
+
+    0% {
+        z-index: -10;
+        margin-bottom: 15%;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    25% {
+        z-index: -10;
+        margin-bottom: 15%;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    50% {
+        z-index: -10;
+        margin-bottom: 20%;
+
+    }
+
+    75% {
+        margin-bottom: 35%;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    100% {
+        z-index: 10;
+        opacity: 5 ;
+        margin-bottom: 45%;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+
+    }
+}
+
+#tr2 {
+
+    animation: cena 10s infinite;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1)10s;
+
+}
+
+
+
+
+@keyframes textcolor {
+
+    0% {
+
+        color: yellow;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+
+    }
+
+    25% {
+        color: rgb(182, 182, 27);
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    50% {
+        color: rgb(9, 78, 255);
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+
+    }
+
+    75% {
+        color: rgb(255, 255, 255);
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    100% {
+        color: rgb(255, 225, 0);
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+
+    }
+}
+
+#mid {
+
+    animation: textcolor 10s infinite;
+
+}
+
+
+
+
+
+
+@keyframes refill {
+
+    0% {
+        margin-left: 5%;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    25% {
+        margin-left: 15%;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    50% {
+        margin-left: 25%;
+        opacity: 0.5;
+        margin-bottom: 20%;
+
+    }
+
+    75% {
+        margin-left: 35%;
+        opacity: 0;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+    }
+
+    100% {
+        margin-left: 0%;
+        opacity: 0;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1)5s;
+
+    }
+}
+
+.refill1,.refill2,.refill3 {
+
+    animation: refill 10s infinite;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1)10s;
+
+}
+
+
